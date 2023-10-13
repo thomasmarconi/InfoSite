@@ -50,15 +50,106 @@
 //     document.getElementById("root")
 // )
 
-const navBar = (
-    <nav>
-        <h1>Tambourine</h1>
-        <ul>
-            <li>Pricing</li>
-            <li>About</li>
-            <li>Contact</li>
-        </ul>
-    </nav>
-)
+// const page = (
+//     <div>
+//         <h1>My awesome website in React</h1>
+//         <h3>Reasons I love React</h3>
+//         <ol>
+//             <li>It's composable</li>
+//             <li>It's declarative</li>
+//             <li>It's a hireable skill</li>
+//             <li>It's actively maintained by skilled people</li>
+//         </ol>
+//     </div>
+// )
 
-ReactDOM.render(navBar, document.getElementById("root"));
+// ReactDOM.render(page, document.getElementById("root"))
+
+
+
+// const navBar = (
+//     <nav>
+//         <h1>Tambourine</h1>
+//         <ul>
+//             <li>Pricing</li>
+//             <li>About</li>
+//             <li>Contact</li>
+//         </ul>
+//     </nav>
+// )
+
+// ReactDOM.render(navBar, document.getElementById("root"));
+
+// function CustomComponent(){
+//     return (
+//         <ol>
+//             <li>It's a marketable skill</li>
+//             <li>I can make useful and fun apps</li>
+//             <li>I like learning new coding stuffs</li>
+//         </ol>               
+//     )   
+// }
+
+// ReactDOM.render(< CustomComponent />, document.getElementById("root"));
+// function Page(){
+//     return (
+//     <div>
+//       <img src="./react-logo.png" width="40px" />
+//       <h1>Fun Facts About React</h1>
+//       <ul>
+//         <li>Was First Released in 2013</li>
+//         <li>Was originally created by Jordan Walke</li>
+//         <li>Has well over 100k stars on github</li>
+//         <li>Is maintained by Facebook</li>
+//         <li>Powers thousands of enterprise apps, including mobile apps</li>
+//       </ul>
+//     </div>
+    
+//   )
+// }  
+//   ReactDOM.render(< Page /> , document.getElementById("root"))
+
+function Header() {
+    return (
+        <header>
+            <nav>
+                <img src="./react-logo.png" width="40px" />
+            </nav>
+        </header>
+    )
+}
+
+function Content(){
+    return (
+        <>
+        <h1>Reasons I'm excited to learn React</h1>
+        <ol>
+            <li>It's a marketable skill</li>
+            <li>I can make useful and fun apps</li>
+            <li>I like learning new coding stuffs</li>
+        </ol> 
+        </> 
+    )
+}
+
+function Footer(){
+    return(
+        <footer>
+            <small>© 2021 Marconi development. All rights reserved.</small>
+        </footer>
+    )
+}
+
+function Page() {
+    return (
+        <div>
+            <Header />
+            <Content />
+            <Footer />
+        </div>
+    )
+}
+
+ReactDOM.render(
+    <Page />, 
+    document.getElementById("root"));
