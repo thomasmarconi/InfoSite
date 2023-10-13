@@ -1,7 +1,7 @@
-ReactDOM.render(<h1>Hello, errybody!</h1>, document.getElementById("root"));
-ReactDOM.render(<h1>Hello, errybody!</h1>, document.querySelector("#root"));
+// ReactDOM.render(<h1>Hello, errybody!</h1>, document.getElementById("root"));
+// ReactDOM.render(<h1>Hello, errybody!</h1>, document.querySelector("#root"));
 
-ReactDOM.render(<ul><li>hello</li><li>world</li></ul>, document.querySelector("#root"));
+// ReactDOM.render(<ul><li>hello</li><li>world</li></ul>, document.querySelector("#root"));
 
 // this is how you had to do the above in vanilla js
 // const h1 = document.createElement("h1")
@@ -50,15 +50,15 @@ ReactDOM.render(<ul><li>hello</li><li>world</li></ul>, document.querySelector("#
 //     document.getElementById("root")
 // )
 
-// const navBar = (
-//     <nav>
-//         <h1>Tambourine</h1>
-//         <ul>
-//             <li>Pricing</li>
-//             <li>About</li>
-//             <li>Contact</li>
-//         </ul>
-//     </nav>
-// )
+const navBar = (
+    <nav>
+        <h1>Tambourine</h1>
+        <ul>
+            <li>Pricing</li>
+            <li>About</li>
+            <li>Contact</li>
+        </ul>
+    </nav>
+)
 
-// ReactDOM.render(navBar, document.getElementById("root"));
+ReactDOM.render(navBar, document.getElementById("root"));
