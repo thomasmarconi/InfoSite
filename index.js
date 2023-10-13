@@ -121,14 +121,14 @@ function Header() {
 
 function Content(){
     return (
-        <>
-        <h1>Reasons I'm excited to learn React</h1>
-        <ol>
-            <li>It's a marketable skill</li>
-            <li>I can make useful and fun apps</li>
-            <li>I like learning new coding stuffs</li>
-        </ol> 
-        </> 
+        <div>
+            <h1>Reasons I'm excited to learn React</h1>
+            <ol>
+                <li>It's a marketable skill</li>
+                <li>I can make useful and fun apps</li>
+                <li>I like learning new coding stuffs</li>
+            </ol> 
+        </div> 
     )
 }
 
